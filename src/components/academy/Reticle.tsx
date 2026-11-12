@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 /** Precision sight reticle. Inherits color from `currentColor`. */
-export function Reticle({ className, dot = true }: { className?: string; dot?: boolean }) {
+export function Reticle({ className, dot = true }: { className?: string | undefined; dot?: boolean }) {
   return (
     <svg viewBox="0 0 200 200" fill="none" className={cn("block", className)} aria-hidden="true">
       <circle cx="100" cy="100" r="92" stroke="currentColor" strokeWidth="1.5" />

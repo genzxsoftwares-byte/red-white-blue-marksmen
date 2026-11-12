@@ -12,10 +12,10 @@ export function Field({
 }: {
   id: string;
   label: string;
-  error?: string;
+  error?: string | undefined;
   hint?: ReactNode;
   children: ReactNode;
-  className?: string;
+  className?: string | undefined;
 }) {
   return (
     <div className={cn("space-y-2", className)}>

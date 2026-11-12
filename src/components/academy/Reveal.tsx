@@ -9,7 +9,7 @@ export function Reveal({
 }: {
   children: ReactNode;
   delay?: number;
-  className?: string;
+  className?: string | undefined;
 }) {
   const { ref, inView } = useInView<HTMLDivElement>(0.15);
   return (
