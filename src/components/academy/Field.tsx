@@ -26,10 +26,10 @@ export function Field({
         {hint}
       </div>
       {children}
-      {error && <p className="text-xs font-medium text-signal animate-fade-up">{error}</p>}
+      {error && <p className="text-xs font-semibold text-destructive animate-fade-up">{error}</p>}
     </div>
   );
 }
 
 export const inputClass =
-  "h-12 rounded-sm border-input bg-card px-4 text-base text-navy shadow-none transition-[border-color,box-shadow] focus-visible:border-navy focus-visible:ring-2 focus-visible:ring-navy/15 aria-[invalid=true]:border-signal";
+  "h-12 rounded-md border-input bg-card px-4 text-base text-navy shadow-none transition-[border-color,box-shadow] focus-visible:border-signal-ink focus-visible:ring-2 focus-visible:ring-signal/30 aria-[invalid=true]:border-destructive";

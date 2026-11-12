@@ -9,13 +9,14 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Lakshya Shooting Academy design system
- * White range walls, navy uniforms, signal red. Precise, calm, editorial.
+ * Project Amarjeet design system
+ * Midnight navy, warm gold, clean white. Calm, dignified, editorial.
+ * "signal" = the gold accent; use text-signal-ink for gold text on white.
  */
 
 @theme inline {
-  --font-display: "Saira Condensed", "Arial Narrow", sans-serif;
-  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-display: "Manrope", "Noto Sans Devanagari", system-ui, sans-serif;
+  --font-sans: "Manrope", "Noto Sans Devanagari", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 
   --radius-sm: calc(var(--radius) - 2px);
@@ -52,6 +53,7 @@
   --color-navy-soft: var(--navy-soft);
   --color-signal: var(--signal);
   --color-signal-deep: var(--signal-deep);
+  --color-signal-ink: var(--signal-ink);
   --color-signal-foreground: var(--signal-foreground);
   --color-paper: var(--paper);
   --color-on-navy: var(--on-navy);
@@ -74,63 +76,64 @@
 }
 
 :root {
-  --radius: 0.25rem;
+  --radius: 0.5rem;
 
-  /* Brand */
-  --navy: oklch(0.255 0.075 262);
-  --navy-deep: oklch(0.185 0.06 263);
-  --navy-soft: oklch(0.36 0.08 260);
-  --signal: oklch(0.555 0.205 26);
-  --signal-deep: oklch(0.47 0.185 25);
-  --signal-foreground: oklch(0.99 0.003 250);
-  --paper: oklch(0.975 0.006 250);
-  --on-navy: oklch(0.985 0.004 250);
-  --on-navy-muted: oklch(0.985 0.004 250 / 62%);
-  --line: oklch(0.255 0.075 262 / 12%);
+  /* Brand — Project Amarjeet: midnight navy, warm gold, clean white */
+  --navy: oklch(0.247 0.04 259);
+  --navy-deep: oklch(0.148 0.044 260);
+  --navy-soft: oklch(0.33 0.045 258);
+  --signal: oklch(0.802 0.113 77); /* gold accent: fills, bars and text on navy */
+  --signal-deep: oklch(0.748 0.12 76);
+  --signal-ink: oklch(0.517 0.1 74); /* gold readable on white */
+  --signal-foreground: oklch(0.148 0.044 260);
+  --paper: oklch(0.967 0 90);
+  --on-navy: oklch(0.99 0.002 250);
+  --on-navy-muted: oklch(0.99 0.002 250 / 66%);
+  --line: oklch(0.247 0.04 259 / 12%);
 
-  --background: oklch(0.995 0.002 250);
-  --foreground: var(--navy-deep);
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.247 0.04 259);
   --card: oklch(1 0 0);
-  --card-foreground: var(--navy-deep);
+  --card-foreground: oklch(0.247 0.04 259);
   --popover: oklch(1 0 0);
-  --popover-foreground: var(--navy-deep);
+  --popover-foreground: oklch(0.247 0.04 259);
   --primary: var(--navy);
   --primary-foreground: var(--on-navy);
   --secondary: var(--paper);
   --secondary-foreground: var(--navy);
-  --muted: oklch(0.955 0.008 252);
-  --muted-foreground: oklch(0.47 0.035 258);
-  --accent: oklch(0.94 0.014 255);
+  --muted: oklch(0.955 0.004 255);
+  --muted-foreground: oklch(0.46 0.02 258);
+  --accent: oklch(0.95 0.02 80);
   --accent-foreground: var(--navy);
-  --destructive: var(--signal);
-  --destructive-foreground: var(--signal-foreground);
-  --border: oklch(0.9 0.012 255);
-  --input: oklch(0.87 0.015 255);
-  --ring: var(--navy-soft);
+  --destructive: oklch(0.593 0.216 27);
+  --destructive-foreground: oklch(0.99 0.002 250);
+  --border: oklch(0.91 0.006 255);
+  --input: oklch(0.88 0.01 255);
+  --ring: var(--signal-ink);
 
   --gradient-hero-veil: linear-gradient(
     90deg,
-    oklch(0.995 0.002 250) 0%,
-    oklch(0.995 0.002 250 / 96%) 32%,
-    oklch(0.995 0.002 250 / 55%) 52%,
-    oklch(0.995 0.002 250 / 0%) 70%
+    oklch(0.148 0.044 260) 0%,
+    oklch(0.148 0.044 260 / 94%) 34%,
+    oklch(0.148 0.044 260 / 60%) 56%,
+    oklch(0.148 0.044 260 / 15%) 80%
   );
   --gradient-navy-veil: linear-gradient(
     180deg,
-    oklch(0.185 0.06 263 / 25%) 0%,
-    oklch(0.185 0.06 263 / 70%) 55%,
-    oklch(0.185 0.06 263 / 96%) 100%
+    oklch(0.148 0.044 260 / 20%) 0%,
+    oklch(0.148 0.044 260 / 70%) 55%,
+    oklch(0.148 0.044 260 / 96%) 100%
   );
-  --shadow-card: 0 1px 0 var(--line), 0 18px 40px -24px oklch(0.185 0.06 263 / 35%);
-  --shadow-signal: 0 12px 28px -12px oklch(0.555 0.205 26 / 55%);
+  --shadow-card: 0 1px 0 var(--line), 0 18px 40px -24px oklch(0.148 0.044 260 / 35%);
+  --shadow-signal: 0 10px 24px -14px oklch(0.748 0.12 76 / 70%);
 
   --chart-1: var(--navy);
   --chart-2: var(--signal);
   --chart-3: var(--navy-soft);
-  --chart-4: oklch(0.7 0.05 255);
-  --chart-5: oklch(0.8 0.03 255);
+  --chart-4: oklch(0.7 0.03 255);
+  --chart-5: oklch(0.8 0.02 255);
   --sidebar: var(--paper);
-  --sidebar-foreground: var(--navy-deep);
+  --sidebar-foreground: var(--navy);
   --sidebar-primary: var(--navy);
   --sidebar-primary-foreground: var(--on-navy);
   --sidebar-accent: var(--accent);
@@ -162,13 +165,14 @@
 
 @utility font-display {
   font-family: var(--font-display);
-  letter-spacing: -0.01em;
+  letter-spacing: -0.035em;
 }
 
 @utility eyebrow {
-  font-family: var(--font-mono);
+  font-family: var(--font-sans);
+  font-weight: 700;
   font-size: 0.72rem;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
 }
 

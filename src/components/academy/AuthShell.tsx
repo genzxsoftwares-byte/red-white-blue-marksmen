@@ -36,7 +36,7 @@ export function AuthShell({
         <div className="flex items-center justify-between p-10">
           <Logo tone="light" />
           <span className="eyebrow flex items-center gap-2 text-on-navy-muted">
-            <span className="size-1.5 rounded-full bg-signal animate-blink" /> Range open
+            <span className="size-1.5 rounded-full bg-signal animate-blink" /> Disha applications open
           </span>
         </div>
 
@@ -49,13 +49,13 @@ export function AuthShell({
             </div>
           </div>
           <p className="eyebrow flex items-center gap-3 text-on-navy animate-fade-up [animation-delay:200ms]"><span className="h-0.5 w-8 bg-signal" />{kicker}</p>
-          <h2 className="mt-4 max-w-md font-display text-6xl font-extrabold uppercase leading-[0.9] xl:text-7xl">
+          <h2 className="mt-4 max-w-md font-display text-5xl font-extrabold leading-[1.02] xl:text-6xl">
             {statement}
           </h2>
           <div className="mt-10 h-px w-full bg-on-navy/20">
             <div className="h-px w-1/3 bg-signal animate-grow-x [animation-delay:600ms]" />
           </div>
-          <p className="mt-4 font-mono text-xs text-on-navy-muted">ISSF 10m · Air rifle · Air pistol</p>
+          <p className="mt-4 font-mono text-xs text-on-navy-muted">Disha · Pratibha · Udaan · Avsar</p>
         </div>
       </aside>
 
@@ -68,9 +68,9 @@ export function AuthShell({
           </div>
           <Link
             to="/"
-            className="group ml-auto inline-flex items-center gap-2 text-sm font-medium text-navy/70 hover:text-navy"
+            className="group ml-auto inline-flex items-center gap-2 text-sm font-semibold text-navy/70 hover:text-signal-ink"
           >
-            <ArrowLeft className="size-4 transition-transform group-hover:-translate-x-1" /> Back to academy
+            <ArrowLeft className="size-4 transition-transform group-hover:-translate-x-1" /> Back to Project Amarjeet
           </Link>
         </div>
         <div className="flex flex-1 items-center justify-center px-6 pb-16 sm:px-10">

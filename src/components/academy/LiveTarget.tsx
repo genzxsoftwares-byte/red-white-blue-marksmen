@@ -73,8 +73,8 @@ export function LiveTarget() {
       <div className="relative mx-auto w-full max-w-[520px]">
         <div className="relative aspect-square rounded-sm bg-paper p-6 shadow-card sm:p-10">
           <div className="eyebrow absolute left-4 top-4 text-muted-foreground">ISSF · {meta.label}</div>
-          <div className="eyebrow absolute right-4 top-4 flex items-center gap-2 text-signal">
-            <span className="size-1.5 rounded-full bg-signal animate-blink" /> Live
+          <div className="eyebrow absolute right-4 top-4 flex items-center gap-2 text-signal-ink">
+            <span className="size-1.5 rounded-full bg-signal animate-blink" /> Recording
           </div>
           <svg viewBox="-110 -110 220 220" className="size-full" role="img" aria-label={`${meta.label} target showing ${count} shots`}>
             <circle r="100" className="fill-card stroke-navy/30" strokeWidth="0.6" />
@@ -172,7 +172,7 @@ export function LiveTarget() {
           <div className="h-full bg-signal transition-[width] duration-700 ease-out" style={{ width: `${count * 10}%` }} />
         </div>
         <p className="mt-3 font-mono text-xs text-on-navy-muted">
-          Series 1 · {count}/10 shots · avg {count ? (total / count).toFixed(2) : "0.00"}
+          Abhyas diary · Series 1 · {count}/10 shots · avg {count ? (total / count).toFixed(2) : "0.00"}
         </p>
       </div>
     </div>
