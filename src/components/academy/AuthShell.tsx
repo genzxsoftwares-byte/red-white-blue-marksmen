@@ -48,7 +48,7 @@ export function AuthShell({
               </div>
             </div>
           </div>
-          <p className="eyebrow text-signal animate-fade-up [animation-delay:200ms]">{kicker}</p>
+          <p className="eyebrow flex items-center gap-3 text-on-navy animate-fade-up [animation-delay:200ms]"><span className="h-0.5 w-8 bg-signal" />{kicker}</p>
           <h2 className="mt-4 max-w-md font-display text-6xl font-extrabold uppercase leading-[0.9] xl:text-7xl">
             {statement}
           </h2>

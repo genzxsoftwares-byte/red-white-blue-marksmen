@@ -297,7 +297,9 @@ function PathwayTrack() {
   return (
     <div className="relative mt-16">
       <Reveal className="absolute left-0 right-0 top-[2.1rem] hidden md:block">
-        <div className="h-px w-full bg-border" />
+        <div className="h-px w-full bg-border">
+          <div className="h-0.5 w-full origin-left -translate-y-px scale-x-0 bg-signal transition-transform delay-300 duration-[1.8s] ease-out in-data-[in=true]:scale-x-100" />
+        </div>
       </Reveal>
       <div className="grid gap-10 md:grid-cols-4 md:gap-6">
         {pathway.map((p, i) => (
