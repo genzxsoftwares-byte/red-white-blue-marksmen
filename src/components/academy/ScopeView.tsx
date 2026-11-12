@@ -4,6 +4,7 @@ import { Reticle } from "./Reticle";
 export function ScopeView() {
   return (
     <div className="relative">
+      <div className="relative">
       <div className="relative size-56 overflow-hidden rounded-full border-[6px] border-navy-deep bg-card shadow-card xl:size-64">
         {/* mini target */}
         <svg viewBox="-50 -50 100 100" className="absolute inset-0 size-full" aria-hidden="true">
@@ -28,13 +29,14 @@ export function ScopeView() {
         </div>
         <div className="pointer-events-none absolute inset-0 rounded-full shadow-[inset_0_0_40px_var(--navy-deep)]" />
       </div>
-      <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 animate-chip-in">
+      <div className="absolute left-1/2 top-[calc(100%-1.5rem)] -translate-x-1/2 animate-chip-in xl:top-[calc(100%-1.5rem)]">
         <div className="flex items-center gap-2 whitespace-nowrap rounded-sm bg-signal px-3 py-1.5 font-mono text-sm text-signal-foreground shadow-signal">
           <span className="font-semibold">10.9</span>
           <span className="opacity-75">· inner ten</span>
         </div>
       </div>
-      <p className="eyebrow mt-8 text-center text-navy/70">Scope view · lane 07</p>
+      </div>
+      <p className="eyebrow mt-12 text-center text-navy/70">Scope view · lane 07</p>
     </div>
   );
 }

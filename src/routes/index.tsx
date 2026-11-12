@@ -87,7 +87,7 @@ function Index() {
           height={1088}
           className="absolute inset-0 -z-20 size-full object-cover object-[75%_center]"
         />
-        <div className="absolute inset-0 -z-10 bg-background/85 lg:bg-hero-veil" />
+        <div className="absolute inset-0 -z-10 bg-background/85 lg:bg-transparent lg:bg-hero-veil" />
         <div className="absolute inset-0 -z-10 hidden lane-grid opacity-60 lg:block" />
 
         <div className="mx-auto grid min-h-[calc(100svh-4.75rem)] max-w-7xl items-center gap-10 px-5 py-16 lg:grid-cols-[1.25fr_1fr] lg:px-8">
