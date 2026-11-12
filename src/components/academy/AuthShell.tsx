@@ -62,7 +62,6 @@ export function AuthShell({
       {/* Form panel */}
       <main className="relative flex flex-col">
         <div className="h-1 bg-signal lg:hidden" />
-        <p className="sr-only">Project Amarjeet</p>
         <div className="flex items-center justify-between px-6 py-6 sm:px-10">
           <div className="lg:hidden">
             <Logo />
