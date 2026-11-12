@@ -28,3 +28,9 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+
+- Academy marketing/auth UI lives in `src/components/academy/`; routes compose these pieces. Why: landing, login and register share the same visual language.
+- Login and register are frontend-only (simulated submit, no backend). Why: the design is under review before Lovable Cloud auth is wired in.
+- Animations are CSS keyframes/utilities in `src/styles.css`; JS only for scroll triggers and the live target. Why: keeps motion consistent and respects reduced-motion in one place.
