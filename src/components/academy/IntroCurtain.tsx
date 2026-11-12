@@ -17,7 +17,7 @@ export function IntroCurtain() {
         </div>
         <div className="mt-10 overflow-hidden">
           <p className="eyebrow text-on-navy-muted animate-fade-up [animation-delay:500ms]">
-            Lane 01 · Ready · Start
+            Amar · Jeet · Victory that never dies
           </p>
         </div>
       </div>

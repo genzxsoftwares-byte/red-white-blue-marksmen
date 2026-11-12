@@ -82,11 +82,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lakshya Shooting Academy" },
-      { name: "description", content: "Olympic-pathway training in 10m air rifle and air pistol." },
-      { name: "author", content: "Lakshya Shooting Academy" },
-      { property: "og:title", content: "Lakshya Shooting Academy" },
-      { property: "og:description", content: "Olympic-pathway training in 10m air rifle and air pistol." },
+      { title: "Project Amarjeet" },
+      { name: "description", content: "Free coaching, mentoring and guidance for India's shooting community, by Gagan Narang and Annu Raj Singh." },
+      { name: "author", content: "Project Amarjeet" },
+      { property: "og:title", content: "Project Amarjeet" },
+      { property: "og:description", content: "Free coaching, mentoring and guidance for India's shooting community, by Gagan Narang and Annu Raj Singh." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -95,7 +95,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Saira+Condensed:wght@500;600;700;800&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@500;700&display=swap",
       },
       {
         rel: "stylesheet",
